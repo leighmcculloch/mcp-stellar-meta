@@ -1,0 +1,7 @@
+{
+  "tasks": {},
+  "imports": {
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@1.8.0",
+    "@stellar/stellar-xdr-json": "npm:@stellar/stellar-xdr-json@^22.0.0-rc.1"
+  }
+}
