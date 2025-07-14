@@ -51,10 +51,11 @@ To use with Claude Desktop:
 
 ## Example
 
-### Understanding a Transaction
+### Finding out what happened in a ledger
 
-https://github.com/user-attachments/assets/8c4eef81-9109-432d-8be6-8e24ead74eef
+https://github.com/user-attachments/assets/10e349d6-b976-42cd-892c-74614b860911
 
-### Understanding a Contract Event
+### Finding out about a transaction
 
-https://github.com/user-attachments/assets/91523c7e-652e-46f8-92af-2315f408e32d
+https://github.com/user-attachments/assets/43336a26-aea1-4f00-8143-22eaf3148999
+
