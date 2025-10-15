@@ -108,7 +108,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           .map((obj) => {
             const parts = obj.Key.split("/");
             const filename = parts.pop();
-            const match = filename.match(/--(\d+)\.xdr\.zstd$/);
+            const match = filename.match(/--(\d+)\.xdr\.zst$/);
             return match ? parseInt(match[1], 10) : 0;
           })
           .filter((seq) => seq > 0);
@@ -237,7 +237,7 @@ function getPathForLedger(ledgerSequence) {
   // Assemble path components
   const partitionDir =
     `${partitionPrefixHex}--${partitionStart}-${partitionEnd}`;
-  const batchFile = `${batchPrefixHex}--${batchStart}.xdr.zstd`;
+  const batchFile = `${batchPrefixHex}--${batchStart}.xdr.zst`;
 
   return `v1.1/stellar/ledgers/pubnet/${partitionDir}/${batchFile}`;
 }
