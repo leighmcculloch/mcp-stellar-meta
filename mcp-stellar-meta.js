@@ -255,9 +255,11 @@ async function getLedger(s3Client, ledgerSequence) {
   const cacheUrl = `http://localhost/${ledgerSequence}.xdr`;
   const cached = await cache.match(cacheUrl);
   if (cached) {
+    console.log(`using ledger ${ledgerSequence} from cache`);
     ledgerXdr = Buffer.from(await cached.arrayBuffer());
   } else {
     const key = getPathForLedger(ledgerSequence);
+    console.log(`fetching ledger ${ledgerSequence} from ${AWS_BUCKET} with key ${key}`);
     const getObjectParams = {
       Bucket: AWS_BUCKET,
       Key: key,
