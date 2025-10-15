@@ -19,7 +19,7 @@ To use with Claude Desktop:
    ```json
    {
      "mcpServers": {
-       "mcp-stellar-xdr-json": {
+       "stellar-meta": {
          "command": "npx",
          "args": [
            "deno",
@@ -42,7 +42,7 @@ To use with Claude Desktop:
    claude mcp add \
      --transport stdio \
      --scope user \
-     mcp-stellar-xdr-json \
+     stellar-meta \
      -- \
      npx deno run --allow-read https://github.com/leighmcculloch/mcp-stellar-meta/raw/refs/heads/main/mcp-stellar-meta.js
    ```
